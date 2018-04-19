@@ -8,8 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    int count;
+}
 
+@property (weak, nonatomic) IBOutlet UILabel *labelOutput;
+
+- (IBAction)restartPressed:(id)sender;
+- (IBAction)buttonPressed:(UIButton*)sender;
 
 @end
 
